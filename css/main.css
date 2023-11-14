@@ -158,13 +158,9 @@ h1, h2, h3, h4, h5, h6{
 }
 .nav-menu a:hover i,
 .nav-menu .active i , 
-.nav-menu .active:focus i,
-.nav-menu li:hover>a i{
-    text-decoration: none;
-    color: #fff;
-}
+.nav-menu .active:focus i,ortifolio
+￼
 
-/* Mobile nav */
 .mobile-nav-toggle{
     position: fixed;
     right: 15px;
@@ -315,8 +311,40 @@ section{
     margin-right: 5px;
     color: #149ddd;
     line-height: 0;
-  }
+}
   
-  .about .content p:last-child {
+.about .content p:last-child {
     margin-bottom: 0;
-  } 
+} 
+
+/* ========= Feitos ==========*/
+
+.facts {
+    padding-bottom: 30px;
+}
+.facts .count-box{
+    padding: 30px;
+    width: 100%;
+}
+.facts .count-box i{
+    display: block;
+    font-size: 44px;
+    color: #149ddd;
+    float: left;
+    line-height: 0;
+    /*padding: 20px;*/
+}
+.facts .count-box span{
+    font-size: 48px;
+    line-height: 40px;
+    display: block;
+    font-weight: 700;
+    color: #050d18;
+    margin-left: 60px;
+}
+.facts .count-box p{
+    padding: 15px 0 0 0;
+    margin: 0 0 0 60px;
+    font-family: "Relaway", sans-serif;
+    color: #173b6c;
+}
