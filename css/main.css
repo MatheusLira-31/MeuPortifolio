@@ -348,3 +348,133 @@ section{
     font-family: "Relaway", sans-serif;
     color: #173b6c;
 }
+
+/* Skills */
+
+.skills .progress {
+    height: 60px;
+    display: block;
+    background: none;
+    border-radius: 0;
+}
+
+.skills .progress .skill{
+    padding: 0;
+    margin: 0 0 6px 0;
+    text-transform: uppercase;
+    display: block;
+    font-weight: 600;
+    color: #050d18;
+}
+.skills .progress .skill .val{
+    float: right;
+    font-style: normal;
+}
+.skills .progress-bar-wrap{
+    background: #cfc8c8;
+    height: 10px;
+}
+.skills .progress-bar{
+    width: 1px;
+    height: 10px;
+    transition: 0.9s;
+    background: #149ddd;
+}
+
+/*  Resume  */
+.resume .resume-title{
+    font-size: 26px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #050d18;
+}
+.resume .resume-item{
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #2eafec;
+    position: relative;
+}
+.resume .resume-item h4{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #040b14;
+    margin-bottom: 10px;
+}
+.resume .resume-item h5{
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.resume .resume-item ul{
+    padding-left: 20px;
+
+}
+.resume .resume-item ul li{
+    padding-bottom: 10px;
+}
+  
+.resume .resume-item::before{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #149ddd;
+}
+
+/* Portfolio Filtro */
+
+.portfolio .portfolio-item{
+    margin-bottom: 30px;
+}
+.portfolio #portfolio-filters{
+    padding: 0;
+    margin: 0 auto 35px auto;
+    list-style: none;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+}
+.portfolio #portfolio-filters li{
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 15px 8px 15px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #272829;
+    margin-bottom: 5px;
+    transition: all 0.3s ease-in-out;
+}
+.portfolio #portfolio-filters li:hover,.portfolio #portfolio-filters li.filter-active{
+    color: #149ddd;
+}
+.portfolio .portfolio-wrap{
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.portfolio .portfolio-wrap::before{
+    content: "";
+    background: rgba(255 , 255 , 255, 0,5);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+    opacity: 0;
+}
